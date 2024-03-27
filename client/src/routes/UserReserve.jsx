@@ -73,7 +73,7 @@ const UserReseve = () => {
   const handleDelete = async (reservaId) => {
     try {
       // Obtener el token de autorización
-      await axios.delete(`https://rolescambios.onrender.com/api/reserva/${reservaId}`, {
+      await axios.delete(`http://localhost:5000/api/reserva/${reservaId}`, {
         headers: {
           Authorization: `Bearer ${auth.getAccessToken()}`
         }
@@ -145,3 +145,5 @@ const UserReseve = () => {
 };
 
 export default UserReseve;
+
+
