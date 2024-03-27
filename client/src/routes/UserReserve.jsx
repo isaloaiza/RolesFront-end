@@ -73,7 +73,7 @@ const UserReseve = () => {
   const handleDelete = async (reservaId) => {
     try {
       // Obtener el token de autorización
-      await axios.delete(`http://localhost:5000/api/reserva/${reservaId}`, {
+      await axios.delete(`https://parqueaderorolesback.onrender.com/api/reserva/${reservaId}`, {
         headers: {
           Authorization: `Bearer ${auth.getAccessToken()}`
         }
